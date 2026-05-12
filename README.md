@@ -1,10 +1,11 @@
 # HARDCODED NEXUS
 
-![Lines](https://img.shields.io/badge/CLAUDE.md-128%20lines-blue)
+![Version](https://img.shields.io/badge/version-2.0-brightgreen)
+![Lines](https://img.shields.io/badge/CLAUDE.md-153%20lines-blue)
 ![Template](https://img.shields.io/badge/CLAUDE--template.md-101%20lines-blue)
 ![Security](https://img.shields.io/badge/security-MCP%20Sentinel-red)
 ![Memory](https://img.shields.io/badge/memory-Obsidian%20%2B%20graphify-purple)
-![Truth](https://img.shields.io/badge/truth-NotebookLM-orange)
+![Patterns](https://img.shields.io/badge/Fibonacci%20%26%20%CF%86-16%20rules-gold)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 > *Secure by design. Strategic by nature. Wired to remember.*
@@ -113,7 +114,7 @@ The global file has a generic §4. Replace it with your actual notebooks/docs:
 | Business Rules | `business-rules` | Domain logic, edge cases |
 ```
 
-### Override the tech stack (Section 10)
+### Override the tech stack (Section 8)
 The default stack is React + TypeScript + Python + PostgreSQL. Override per project:
 
 ```markdown
@@ -144,13 +145,13 @@ Customize how Claude addresses you and formats responses. The default is English
 | §2 Security | MCP Sentinel rules, absolute prohibitions, false positive handling |
 | §3 Token efficiency | Lazy loading, subagent routing, memory-first lookups |
 | §4 Knowledge bridge | When and how to consult docs before writing code |
-| §5 Execution | Plan-first, hard code limits, dependency rules, test criteria |
-| §6 Autonomy | Debug loop limit (3 attempts), learning feedback rules |
+| §5 Execution | Plan-first, hard code limits, dependency rules, test criteria, CLI > MCP |
+| §6 Autonomy + memory | Debug loop limit (3 attempts), feedback rules, memory hygiene, conflict hierarchy |
 | §7 Git | Commit format, safety rules |
-| §8 Toolchain | Default dev/test/lint/build commands |
-| §9 Memory hygiene | What to save, conflict hierarchy, periodic consolidation |
-| §10 Tech stack | Language and framework decision table |
-| §11 Config layers | File precedence (global → project → local → rules → hooks) |
+| §8 Tech stack | Language/framework decision table — includes Quantum row (Qiskit · Cirq · Q# · QRunes) |
+| §9 Config layers | File precedence (global → project → local → rules → hooks) |
+| §10 Canonical taxonomy | Slug naming for cross-surface consistency (Chat/CoWork/Code/Vault) |
+| §11 Fibonacci & φ patterns | 16 operational rules across code, UI, business, growth, quantum — with anti-hype guard |
 
 ---
 
@@ -175,12 +176,12 @@ Never disable the global hook.
 
 ## File size discipline
 
-The `CLAUDE.md` is **128 lines** with 32 lines reserved for future sections (hard cap: 160). This is intentional:
+The `CLAUDE.md` is **153 lines** (v2.0 — hard cap: 180). This is intentional:
 - LLMs load the full file into context at session start
 - Every extra line costs tokens on every prompt
 - Lean file = faster sessions, lower cost, less cognitive load
 
-PRs that push past 160 lines without removing something else will be rejected.
+PRs that push past 180 lines without removing something else will be rejected.
 
 ---
 
@@ -193,7 +194,7 @@ Issues welcome for:
 - Translations of §0 Identity for other languages/styles
 
 PRs must:
-- Keep `CLAUDE.md` at or below 160 lines (currently 128 — 32 lines reserved for future sections)
+- Keep `CLAUDE.md` at or below 180 lines (currently 156)
 - Add a concrete operational rule, not a philosophy statement
 - Test the change across at least one real Claude Code session
 
