@@ -1,6 +1,6 @@
 # HARDCODED NEXUS — The Execution Engine for Claude Code
 > **Author:** Marcos Bernadas ([@marquinho101](https://github.com/marquinho101))
-> **Version:** 2.0 · **License:** MIT · *Secure by design. Strategic by nature. Wired to remember.*
+> **Version:** 2.1 · **License:** MIT · *Secure by design. Strategic by nature. Wired to remember.*
 > **Security** (Sentinel) · **Truth** (knowledge base) · **Memory** (Obsidian + graphify) · **Execution** (you)
 
 ---
@@ -132,7 +132,7 @@ Sub-clientes: `<slug>/clientes/<cliente-slug>/`.
 | Story points + RICE | Escala `1·2·3·5·8·13` ambos. Story `≥13` = partir antes de estimar. RICE = `(Impact×Confidence)/Effort` cada factor F |
 | Org sizing (Spotify) | Squad 5–8 · Tribe 13–21 · Chapter 34–55 · Guild 89+ (puntos quiebre cognitivo Fibonacci) |
 | Pricing tiers φ | `base · base·φ · base·φ²` (ej: 19€·49€·79€·129€) — escala percibida natural |
-| Inventory EOQ + φ | EOQ Harris-Wilson + variante `safety_stock × φ = reorder · reorder × φ = max`. Cap por `shelf_life × demand_daily` en perecederos · fallback clásico si `reorder_φ ≥ max_φ` |
+| Inventory EOQ + φ | EOQ Harris-Wilson + variante `safety_stock × φ = reorder · reorder × φ = max`. Cap por `shelf_life × demand_daily` en perecederos · fallback clásico si `reorder_φ ≥ max_φ`. **Constraints biológicos/regulatorios priman** (fermentación, caducidad, normativa sanitaria) → cap antes que F/φ |
 | Design tokens (React+Tailwind) | Tipografía `16→26→42→68` (×φ) · spacing `4·8·12·20·32·52` · `w-[61.8%]` two-col · animación stagger `100·160·260`ms |
 | Image crop focal | `focal_x = w×0.618 ; focal_y = h×0.382` (hero, thumbnails) |
 | Pagination adaptativa | `page_sizes=[3,5,8,13,21]` crece con engagement; `13·21·34·55` si batch denso heterogéneo |
@@ -144,7 +144,7 @@ Sub-clientes: `<slug>/clientes/<cliente-slug>/`.
 | CS clásicos | Fibonacci search · Fibonacci heap (Dijkstra/Prim `decrease_key O(1)` amort) · DP memo · hashing `floor(k·φ⁻¹·m)` |
 | Cuántica (referencia) | Anyones τ×τ=1+τ (Microsoft TQC topological) · QAOA layers `p=1,2,3,5,8` · Shor period F(n) mod N · quasicrystals Fibonacci word. Cita estratégica, no implementable hoy |
 
-**Guard anti-hype**: no rebautizar lo estándar (`2^n`, lineal, D7/D14/D30, 20/50/100). Test obligatorio antes de aplicar: "¿qué falla concretamente con la secuencia estándar?". Sin respuesta operativa → no usar.
+**Guard anti-hype**: no rebautizar lo estándar (`2^n`, lineal, D7/D14/D30, 20/50/100). Test obligatorio antes de aplicar: "¿qué falla concretamente con la secuencia estándar?". Sin respuesta operativa → no usar. **Threshold cuantitativo**: si ajuste F/φ degrada UX o perf >5% (latencia, conversión, error rate) → fallback estándar. Bug trivial (CSS pixel, off-by-one, typo) → nunca tocar Fibonacci.
 
 ---
 
