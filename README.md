@@ -1,6 +1,6 @@
 # HARDCODED NEXUS
 
-![Version](https://img.shields.io/badge/version-2.0-brightgreen)
+![Version](https://img.shields.io/badge/version-2.1-brightgreen)
 ![Lines](https://img.shields.io/badge/CLAUDE.md-153%20lines-blue)
 ![Template](https://img.shields.io/badge/CLAUDE--template.md-101%20lines-blue)
 ![Security](https://img.shields.io/badge/security-MCP%20Sentinel-red)
