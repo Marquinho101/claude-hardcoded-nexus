@@ -1,7 +1,7 @@
 # HARDCODED NEXUS
 
-![Version](https://img.shields.io/badge/version-2.1-brightgreen)
-![Lines](https://img.shields.io/badge/CLAUDE.md-153%20lines-blue)
+![Version](https://img.shields.io/badge/version-4.7-brightgreen)
+![Lines](https://img.shields.io/badge/CLAUDE.md-149%20lines-blue)
 ![Template](https://img.shields.io/badge/CLAUDE--template.md-101%20lines-blue)
 ![Security](https://img.shields.io/badge/security-MCP%20Sentinel-red)
 ![Memory](https://img.shields.io/badge/memory-Obsidian%20%2B%20graphify-purple)
@@ -176,7 +176,7 @@ Never disable the global hook.
 
 ## File size discipline
 
-The `CLAUDE.md` is **153 lines** (v2.0 — hard cap: 180). This is intentional:
+The `CLAUDE.md` is **149 lines** (v4.7 — hard cap: 180). This is intentional:
 - LLMs load the full file into context at session start
 - Every extra line costs tokens on every prompt
 - Lean file = faster sessions, lower cost, less cognitive load
